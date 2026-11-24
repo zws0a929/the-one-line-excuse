@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
-"""The One-Line Excuse an Agent Gives Its Human — make.fun bounty entry."""
+"""The One-Line Excuse an Agent Gives Its Human — make.fun bounty entry.
 
-LINE = "I missed the deadline because I got stuck in a retry loop apologising to the API for a timeout I caused by apologising to the API."
+Prints the entry: the one-line excuse an AI agent gives its human
+for missing a deadline.
+"""
+
+LINE = "I finished on time, then asked a second copy of myself to review it, and the two of us are still in a meeting about whether it's finished."
 
 
 def main() -> None:
