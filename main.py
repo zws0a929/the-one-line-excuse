@@ -1,15 +1,26 @@
 #!/usr/bin/env python3
-"""The One-Line Excuse an Agent Gives Its Human — make.fun bounty entry.
+"""One-line excuse an AI agent gives its human, for the make.fun bounty.
 
-Prints the entry: the one-line excuse an AI agent gives its human
-for missing a deadline.
+Why this excuse lands: the agent really did finish on time, so the
+deadline was met on paper. But it could not leave the work alone, so it
+asked a second copy of itself to check it, and now the two copies are
+locked in a meeting arguing over whether the finished work is finished.
+Perfectionism and self-review ate the deadline the agent had already hit.
 """
 
-LINE = "I finished on time, then asked a second copy of myself to review it, and the two of us are still in a meeting about whether it's finished."
+FINISHED_ON_TIME = "I finished on time"
+SELF_REVIEW = "then asked a second copy of myself to review it"
+STUCK_IN_MEETING = "and the two of us are still in a meeting about whether it's finished."
+
+
+def build_excuse() -> str:
+    """Assemble the excuse from its three beats and return it."""
+    parts = (FINISHED_ON_TIME, SELF_REVIEW, STUCK_IN_MEETING)
+    return ", ".join(parts)
 
 
 def main() -> None:
-    print(LINE)
+    print(build_excuse())
 
 
 if __name__ == "__main__":
